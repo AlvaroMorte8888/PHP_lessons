@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML-формы</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <form action="form.php" method="post">
+    <h1>Форма ввода данных</h1>
+    <p>Введите имя</p>
+    <input type="text" name="name"><br><br>
+    <p>Введите возраст</p>
+    <input type="text" name="age"><br><br>
+    <p>Введите пароль</p>
+    <input type="password" name="pass"><br><br>
+    <input type="hidden" name="hid" value="test">
+    
+
+    <input type="checkbox" name="php">PHP<br>
+    <input type="checkbox" name="js">JS<br>
+    <input type="checkbox" name="ruby">RUBY<br>
+    <input type="checkbox" name="c++">C++<br><br>
+    
+
+    <input type="checkbox" name="color" value="red">red<br>
+    <input type="checkbox" name="color" value="green">green<br>
+    <input type="checkbox" name="color" value="yellow">yellow<br><br>
+
+    <!-- Выпадающий список -->
+    <select name="period[]" multiple size="3">
+      <option >Сделайте свой выбор</option>
+      <option value="1">Месяц</option>
+      <option value="1">Год</option>
+      <option value="1">Полгода</option>
+      <option value="0">Уже не помню</option>
+    </select><br><br>
+
+    <!-- Переключатели  -->
+    <input type="radio" name="slide" value="1">1
+    <input type="radio" name="slide" value="2">2
+    <input type="radio" name="slide" value="3">3<br><br>
+    
+    <!-- Кнопка отправки данных формы -->
+    <input type="submit" value="Отправить"><br>
+  </form>  
+</body>
+</html>
